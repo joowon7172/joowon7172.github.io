@@ -17,38 +17,86 @@
 <meta charset="utf=8">
 <title>2학년 시작!</title>
 
+<style>
+  body{
+    background-color: rgb(229, 207, 238);
+  }
+  #inner
+{
+  background-color: rgb(215, 195, 236);
+  text-align: center;
+}
+#record
+{
+  background-color: rgb(235, 219, 241);
+  
+  width: 500px;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+
+  border-radius: 30px;
+
+  overflow: scroll;
+
+}
+#main
+{
+  display: flex;
+}
+.aside
+{
+  flex:30%;
+  background-color: rgb(235, 219, 241);
+  border-radius: 30px;
+  width: 500px;
+  margin: 20px;
+  padding: 20px;
+  overflow: scroll;
+
+}
+  </style>
     </head>
     <div class = "container">
         <body>
-            <div class="jumbotron">
+            <div class="jumbotron" id="inner">
                 <h1>Joowon's Blog</h1>
               </div>
               <hr/>
               <ul class="nav nav-pills">
                 <li role="presentation" ><a href="index.html">Blog Main</a></li>
-                  <li role="presentation"><a href="About me.html">About me</a></li>
+                  <li role="presentation"><a href="index1.html">About me</a></li>
                   <li role="presentation"><a href="취미.html">취미</a></li>
                   <li role="presentation" class="active"><a href="2학년 시작!.html">2학년 시작!</a></li>
+                  <li role="presentation"><a href="index2.html">My Github</a></li>
                 </ul>
                 <hr/>
               <br>
               <h1>2학년 시작!</h1>
               <hr/>
-              <ul> <!--앞으로의 저의 활동들을 기입할 곳으로 순서 없는 리스트로 나타냈습니다-->
-              <li><h4>2021 . 03 . 02 개학</h4></li>
-              <li><h4>2021 . 03 . 19 멋사 합격!</h4></li>
-              <li><h4>멋사 활동 진행중</h4></li>
-
-        
-           
-        
-      
-
-
-
-
-
-
+              <!--V2: display: flex; 적용-->
+              <div id="main">
+                <!--V2: margin, padding, border-radius 설정해줌-->
+                <div id="record">
+                <ul> <!--앞으로의 저의 활동들을 기입할 곳으로 순서 없는 리스트로 나타냈습니다-->
+                  <li><h4>2021 . 03 . 02 개학</h4></li>
+                  <li><h4>2021 . 03 . 19 <strong>멋사 합격!</strong></h4></li>
+                  <li><h4>웹기초 공부</h4></li>
+                  <li><h4>블로그 만들기</h4></li>
+                  <li><h4>HTML & CSS 1</h4></li>
+                  <li><h4><strong>중간고사</strong></h4></li>
+                  <li><h4>HTML & CSS 2</h4></li>
+                  <li><h4>2학년 실습주간!!</h4></li>
+                  <li><h4>Semantic 구조에 따라 블로그 꾸미기</h4></li>
+                  <li><h4>멋사 활동 진행중</h4></li>
+                </div>
+                <aside class="aside">
+                  <h2><strong>올해 계획</strong></h2>
+                  <ul>
+                    <li>차차 정하자</li>
+                  </ul>
+                </aside>
+              </div>
 
         </body>
     </div>
